@@ -1,0 +1,34 @@
+Create vartual Environment:
+py -3 -m venv <Name> 
+
+Select Vartual Environment
+1. Tap On View Option
+2. Select Command Palatte
+3. Search Pyhton:Select Interpreter
+4. Add Your Vartual Environment Path : .\<VartualEnvironment Folder Name>\Scripts\python.exe And Press Enter
+
+Use Vartual Environment: venv\Scripts\activate.bat
+
+Install Fastapi Package:pip install fastapi[all]
+
+Start Server : uvicorn main:app  And Also we can use : uvicorn main:app --reload 
+Folder Specific : uvicorn app.main:app --reload
+
+
+
+Local Postgres Passwod : Dillu8091
+Database : user='postgres',password='Dillu@8091'
+Master password : dilip@123
+pip install psycopg2
+pip install sqlalchemy
+pip install python-jose[cryptpgraphy] //For JWT Token
+pip install alembic // For Database Migration
+
+alembic init "folderName" // Create folder for migration scripts
+alembic revision -m "create post table" //create table migration
+alembic upgrade "revision id" // for run specific migration
+alembic upgrade head // run all migration scripts
+
+package:
+random = use for create random number
+
